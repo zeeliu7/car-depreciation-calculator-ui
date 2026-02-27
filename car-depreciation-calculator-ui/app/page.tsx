@@ -129,7 +129,7 @@ function ResultCard({ stepLabel, title, loadingText, step, isOpen, onToggle }: R
 // ── API helpers ──────────────────────────────────────────────────────────────
 
 async function fetchDepreciation(form: FormData): Promise<string> {
-  const res = await fetch("http://car-depreciation-calculator.fyi/api/predict/future", {
+  const res = await fetch("/api/depreciation", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -144,12 +144,12 @@ async function fetchDepreciation(form: FormData): Promise<string> {
     }),
   });
 
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`Depreciation API error (${res.status}): ${text}`);
+  const json = await res.json();
+
+  if (!res.ok || json.error) {
+    throw new Error(json.error ?? `Depreciation API error (${res.status})`);
   }
 
-  const json = await res.json();
   return json.data as string;
 }
 
