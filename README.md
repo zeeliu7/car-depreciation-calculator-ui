@@ -2,6 +2,8 @@
 
 Want to sell your second-hand car in the U.S.? Get your insights with ML-powered price prediction and AI-powered market analysis!
 
+### [Try it now!](https://car-depreciation-calculator-ui.vercel.app/)
+
 This is a continuation of [Car Depreciation Calculator](https://github.com/zeeliu7/car-depreciation-calculator).
 
 ## Features
