@@ -1,1 +1,33 @@
-# car-depreciation-calculator-ui
+# Car Depreciation Calculator UI
+
+Want to sell your second-hand car in the U.S.? Get your insights with ML-powered price prediction and AI-powered market analysis!
+
+This is a continuation of [Car Depreciation Calculator](https://github.com/zeeliu7/car-depreciation-calculator).
+
+## Features
+
+* ✅ 5-year future value forecasts based on a high-accuracy model (<0.04 MAE)
+* ✅ Web searches on the latest government policies and customer demands in the U.S. that may affect your price
+* ✅ Fully-automated insights based on comprehensive information for car sellers
+
+## Example
+
+From this:
+
+![input](./example_img/vehicle_input.png)
+
+To this:
+
+![output](./example_img/vehicle_output.png)
+
+## Local deployment instructions
+
+Anthropic API key required.
+
+```bash
+cd car-depreciation-calculator-ui
+cp .env.local.example .env.local
+nano .env.local # and place your Anthropic API key in the file
+cd ..
+npm run dev
+```
