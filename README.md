@@ -6,7 +6,7 @@ This is a continuation of [Car Depreciation Calculator](https://github.com/zeeli
 
 ## Features
 
-* ✅ 5-year future value forecasts based on a high-accuracy model (<0.04 MAE)
+* ✅ 5-year future value forecast based on a high-accuracy model (<0.04 MAE)
 * ✅ Web searches on the latest government policies and customer demands in the U.S. that may affect your price
 * ✅ Fully-automated insights based on comprehensive information for car sellers
 
@@ -28,6 +28,5 @@ Anthropic API key required.
 cd car-depreciation-calculator-ui
 cp .env.local.example .env.local
 nano .env.local # and place your Anthropic API key in the file
-cd ..
 npm run dev
 ```
