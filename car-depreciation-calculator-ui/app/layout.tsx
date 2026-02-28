@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Car Depreciation Calculator",
+  title: "Car Depreciation Calculator + Analytics",
   description: "Predict your car's future value over the next 5 years",
 };
 
