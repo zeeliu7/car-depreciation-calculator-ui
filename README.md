@@ -18,11 +18,11 @@ This is a continuation of [Car Depreciation Calculator](https://github.com/zeeli
 
 From this:
 
-![input](./example_img/vehicle_input.png)
+![vehicle_input](./example_img/vehicle_input.png)
 
 To this:
 
-![output](./example_img/vehicle_output.png)
+![vehicle_output](./example_img/vehicle_output.png)
 
 ## Local deployment instructions
 
