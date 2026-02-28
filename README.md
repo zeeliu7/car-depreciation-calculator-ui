@@ -18,19 +18,18 @@ This is a continuation of [Car Depreciation Calculator](https://github.com/zeeli
 
 From this:
 
-![vehicle_input](./example_img/vehicle_input.png)
+![input](./example_img/input.png)
 
 To this:
 
-![vehicle_output](./example_img/vehicle_output.png)
+![output](./example_img/output.png)
 
 ## Local deployment instructions
 
-Anthropic API key required.
-
-```bash
-cd car-depreciation-calculator-ui
-cp .env.local.example .env.local
-nano .env.local # and place your Anthropic API key in the file
-npm run dev
-```
+1. Have your Anthropic API key prepared
+2. Head to `./car-depreciation-calculator-ui`
+3. Create or modify `.env.local` and fill your API key like this:
+    ```
+    ANTHROPIC_API_KEY=sk-ant-xxxxx
+    ```
+4. Run `npm run dev`

@@ -160,7 +160,12 @@ async function fetchFromRoute(path: string, body?: object): Promise<string> {
     body: body ? JSON.stringify(body) : undefined,
   });
 
-  const json = await res.json();
+  let json: { error?: string; result?: string };
+  try {
+    json = await res.json();
+  } catch {
+    throw new Error(`Request failed (${res.status}): server returned an invalid response`);
+  }
 
   if (!res.ok || json.error) {
     throw new Error(json.error ?? `Request failed (${res.status})`);
